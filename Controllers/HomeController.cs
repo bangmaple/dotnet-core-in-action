@@ -23,6 +23,18 @@ namespace dotnet_core_in_action.Controllers
             return View();
         }
 
+        public IActionResult About()
+        {
+            ViewData["Message"] = "Your applicaiton description page.";
+            return View();
+        }
+
+        public IActionResult Contact()
+        {
+            ViewData["Message"] = "Your contact page.";
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
